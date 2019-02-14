@@ -1,0 +1,15 @@
+{
+  "name": "viot/windows_2012r2",
+  "description": "This box contains Windows 2012r2 64-bit.",
+  "versions": [
+    {
+      "version": "20180629.0.0",
+      "providers": [
+        {
+          "name": "virtualbox",
+          "url": "https://onedrive.live.com/download?cid=0BFE242622F2748F&resid=BFE242622F2748F%21225888&authkey=ANzEsktKkGKxgEI"
+        }
+      ]
+    }
+  ]
+}

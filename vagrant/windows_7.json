@@ -1,0 +1,15 @@
+{
+  "name": "viot/windows_7",
+  "description": "This box contains Windows 7 64-bit.",
+  "versions": [
+    {
+      "version": "20170809.0.0",
+      "providers": [
+        {
+          "name": "virtualbox",
+          "url": "https://onedrive.live.com/download?cid=0BFE242622F2748F&resid=BFE242622F2748F%21222026&authkey=AHpUTT2u_r83WSw"
+        }
+      ]
+    }
+  ]
+}

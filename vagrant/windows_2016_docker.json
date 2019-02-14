@@ -1,0 +1,15 @@
+{
+  "name": "viot/windows_2016_docker",
+  "description": "This box contains Windows 2016 64-bit with docker enabled.",
+  "versions": [
+    {
+      "version": "20170518.0.0",
+      "providers": [
+        {
+          "name": "virtualbox",
+          "url": "https://onedrive.live.com/download?cid=0BFE242622F2748F&resid=BFE242622F2748F%21222032&authkey=ADSCXB45Y939GWI"
+        }
+      ]
+    }
+  ]
+}
