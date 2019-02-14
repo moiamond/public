@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>測試 AWS EC2 機器轉檔效能</title>
+        <link rel="stylesheet" href="./css/reveal.css">
+        <link rel="stylesheet" href="./css/theme/black.css" id="theme">
+        <link rel="stylesheet" href="./css/highlight/zenburn.css">
+        <link rel="stylesheet" href="./css/print/paper.css" type="text/css" media="print">
+
+
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section  data-markdown><script type="text/template"># 測試 AWS EC2 機器轉檔效能
+
+Ricky Hsieh
+<<rickyhsieh@gorilla-technology.com>>
+</script></section><section  data-markdown><script type="text/template">
+## 大綱
+
+1. 簡介
+1. 前製作業
+1. 啟動程序
+</script></section><section  data-markdown><script type="text/template">
+## 簡介
+
+- [AWS Service](https://ap-northeast-1.console.aws.amazon.com/console/home) 
+  - [IAM](https://console.aws.amazon.com/iam/home)
+  - [EC2](https://ap-northeast-1.console.aws.amazon.com/ec2/v2/home)
+  - [S3](https://console.aws.amazon.com/s3/home)
+- Application deployment
+  - [Docker](https://www.docker.com/)
+</script></section><section ><section data-markdown><script type="text/template">
+## 前製作業
+
+- 取得 Access Key ID 和 Secret Access Key
+- 打開 SSH PORT
+- 安裝 AWS CLI
+- 設定 AWS CLI
+- 上傳測試檔到 S3
+</script></section><section data-markdown><script type="text/template">
+### 取得 Access Key ID 和 Secret Access Key
+
+1. [IAM](https://console.aws.amazon.com/iam/home) 建立 User 並給他相對應的權限
+1. 拿到 User 的 Secret Credentials
+
+註: [AWS 參考文件](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-set-up.html)
+</script></section><section data-markdown><script type="text/template">
+### 打開 SSH PORT
+
+- 到 EC2 Security Group 頁面，打開 default security group 的 Inbound 22 port
+</script></section><section data-markdown><script type="text/template">
+### 安裝 AWS CLI
+
+```
+$ pip install awscli
+```
+註: 更詳細的步驟，可以參考 [AWS CLI 安裝手冊](http://docs.aws.amazon.com/cli/latest/userguide/installing.html#install-with-pip)
+</script></section><section data-markdown><script type="text/template">
+### 設定 AWS CLI
+
+```
+$ aws configure
+AWS Access Key ID [None]: AWS_ACCESS_KEY_ID
+AWS Secret Access Key [None]: AWS_SECRECT_ACCESS_KEY
+Default region name [None]: ap-northeast-1
+Default output format [None]: ENTER
+```
+</script></section><section data-markdown><script type="text/template">
+### 上傳測試檔到 S3
+
+1. 上傳測試檔到 [S3](https://console.aws.amazon.com/s3/home)
+1. 取得公開下載網址
+</script></section></section><section ><section data-markdown><script type="text/template">
+## 啟動程序
+
+```bash
+$ ./benchmark.sh EC2_TYPE MEDIA_ON_S3_URL
+```
+
+註: *EC2_TYPE* : `t2.micro` or `c4.large`, See EC2 [Instance Type](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html)
+</script></section><section data-markdown><script type="text/template">
+## Demo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qFZBgtcTo3E" frameborder="0" allowfullscreen>
+</iframe>
+</script></section></section><section  data-markdown><script type="text/template">
+## 參考
+
+- [https://github.com/moiamond/aws-ff-benchmark](https://github.com/moiamond/aws-ff-benchmark)
+</script></section><section  data-markdown><script type="text/template">
+# The End
+</script></section></div>
+        </div>
+
+        <script src="./lib/js/head.min.js"></script>
+        <script src="./js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: './lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: './plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: './plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: './plugin/zoom-js/zoom.js', async: true },
+              { src: './plugin/notes/notes.js', async: true },
+              { src: './plugin/math/math.js', async: true }
+            ];
+
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default', // none/fade/slide/convex/concave/zoom
+              dependencies: deps
+            };
+
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+
+            var options = {};
+            options = extend(defaultOptions, options, queryOptions);
+        </script>
+
+
+        <script>
+          Reveal.initialize(options);
+        </script>
+    </body>
+</html>
