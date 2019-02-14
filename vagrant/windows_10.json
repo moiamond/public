@@ -1,0 +1,15 @@
+{
+  "name": "viot/windows_10",
+  "description": "This box contains Windows 10 64-bit.",
+  "versions": [
+    {
+      "version": "20180625.0.0",
+      "providers": [
+        {
+          "name": "virtualbox",
+          "url": "https://onedrive.live.com/download?cid=0BFE242622F2748F&resid=BFE242622F2748F%21225887&authkey=AKAgsn8p8D3xeuI"
+        }
+      ]
+    }
+  ]
+}
