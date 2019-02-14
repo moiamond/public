@@ -19,3 +19,7 @@
 
 - [Windows 2012 R2](https://moiamond.github.io/public/vagrant/windows_2012r2.json)
 - [Windows 2016 + docker](https://moiamond.github.io/public/vagrant/windows_2016_docker.json)
+
+## Present
+
+- [AWS EC2 Trancoding Performance Benchmark](https://moiamond.github.io/public/ppts/trancoding-perf-ec2)
