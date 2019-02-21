@@ -22,5 +22,5 @@
 
 ## Present
 
-- [Container Orchestration With Rancher](./slides/container-orchestration-with-rancher), 2019/2/20
+- [Container Orchestration With Rancher](https://moiamond.github.io/public/slides/container-orchestration-with-rancher), 2019/2/20
 - [AWS EC2 Trancoding Performance Benchmark](https://moiamond.github.io/public/slides/trancoding-perf-ec2)
