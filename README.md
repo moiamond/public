@@ -22,4 +22,4 @@
 
 ## Present
 
-- [AWS EC2 Trancoding Performance Benchmark](https://moiamond.github.io/public/ppts/trancoding-perf-ec2)
+- [AWS EC2 Trancoding Performance Benchmark](https://moiamond.github.io/public/slides/trancoding-perf-ec2)
