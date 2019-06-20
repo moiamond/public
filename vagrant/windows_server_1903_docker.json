@@ -1,0 +1,15 @@
+{
+  "name": "viot/windows_server_1903_docker",
+  "description": "This box contains Windows Server Core 1903 with docker enabled.",
+  "versions": [
+    {
+      "version": "20190426.0.0",
+      "providers": [
+        {
+          "name": "virtualbox",
+          "url": "https://onedrive.live.com/download?cid=0BFE242622F2748F&resid=BFE242622F2748F%21227794&authkey=ANh5IQMVt_ry1rk"
+        }
+      ]
+    }
+  ]
+}

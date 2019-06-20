@@ -1,0 +1,15 @@
+{
+  "name": "viot/windows_server_1803_docker",
+  "description": "This box contains Windows Server Core 1803 with docker enabled.",
+  "versions": [
+    {
+      "version": "20190508.0.0",
+      "providers": [
+        {
+          "name": "virtualbox",
+          "url": "https://onedrive.live.com/download?cid=0BFE242622F2748F&resid=BFE242622F2748F%21227797&authkey=AJT5LFMuE0CO5ZY"
+        }
+      ]
+    }
+  ]
+}

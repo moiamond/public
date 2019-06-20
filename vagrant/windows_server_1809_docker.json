@@ -1,0 +1,15 @@
+{
+  "name": "viot/windows_server_1809_docker",
+  "description": "This box contains Windows Server Core 1809 with docker enabled.",
+  "versions": [
+    {
+      "version": "20190427.0.0",
+      "providers": [
+        {
+          "name": "virtualbox",
+          "url": "https://onedrive.live.com/download?cid=0BFE242622F2748F&resid=BFE242622F2748F%21227799&authkey=AFSx8vnzlUHrV-Q"
+        }
+      ]
+    }
+  ]
+}
