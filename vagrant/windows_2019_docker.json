@@ -19,6 +19,15 @@
           "url": "https://onedrive.live.com/download?cid=0BFE242622F2748F&resid=BFE242622F2748F%21228776&authkey=AGKpZl35X0tZYhE"
         }
       ]
+    },
+    {
+      "version": "20191225.0.0",
+      "providers": [
+        {
+          "name": "virtualbox",
+          "url": "https://onedrive.live.com/download?cid=0BFE242622F2748F&resid=BFE242622F2748F%21230453&authkey=AB5MTjo5yMiOopU"
+        }
+      ]
     }
   ]
 }
