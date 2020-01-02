@@ -21,7 +21,7 @@
       ]
     },
     {
-      "version": "20191225.0.0",
+      "version": "20191226.0.0",
       "providers": [
         {
           "name": "virtualbox",
