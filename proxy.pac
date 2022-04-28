@@ -1,4 +1,4 @@
 function FindProxyForURL(url, host)
 { 
-     return "SOCKS 192.168.2.4:3128";
+     return "SOCKS u184.rdcrystal.moiamond.com:3128";
 }
